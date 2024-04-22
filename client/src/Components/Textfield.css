@@ -1,0 +1,80 @@
+/* Changes made to https://uiverse.io/OnlyCodeChannel/ugly-penguin-43 */
+
+.input-wrapper input {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+  }
+  
+  .input-wrapper input:focus {
+    outline-color: rgb(128,0,128)
+  }
+
+  .challengeSearchBox {
+    display: flex;
+    border-radius: 0.75rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0.4rem #dfd9d9;
+    width: 99.5%;
+    height: 50px;
+ 
+    margin-top: 2px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #ecebeb;
+ 
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+  
+.challengeSearchBox .challengeSearchButton {
+    color: white;
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(128,0,128);
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, )
+}
+
+.challengeSearchBox:hover .challengeSearchButton {
+    color: #fff;
+    background-color: rgb(128,0,128);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 20px;
+}
+
+.challengeSearchBox:active .challengeSearchButton {
+    box-shadow: none;
+    transform: translateY(-10);
+}
+
+.challengeSearchBox .challengeSearchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+}
+
+
+.test {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 4fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 1px;
+    }
+  
+  

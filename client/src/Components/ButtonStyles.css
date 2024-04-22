@@ -1,0 +1,494 @@
+/* CSS */
+/* Changes made to https://uiverse.io/vinodjangid07/thin-duck-22 */
+.button-82-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  .button-82-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background:  hsl(288, 100%, 15%) 100%
+  }
+  
+  .button-82-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: purple; 
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  @media (min-width: 768px) {
+    .button-82-front {
+      font-size: 1.25rem;
+      padding: 12px 42px;
+    }
+  }
+  
+  .button-82-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+  }
+  
+  .button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .button-82-pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  /* styles.css */
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #4caf50; 
+  transition: width 0.3s ease;
+}
+
+
+
+/* Used for manage and view buttons */
+.groupControlButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(128,0,128)
+}
+
+.groupControlButton .sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.groupControlButton .sign svg {
+  width: 20px;
+}
+
+.groupControlButton .sign svg path {
+  fill: white;
+}
+
+.groupControlButton .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+.groupControlButton:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.groupControlButton:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 10px;
+}
+
+.groupControlButton:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: -20px;
+  font-size: 1.2em;
+  white-space: nowrap;
+  
+
+}
+
+.groupControlButton:active {
+  transform: translate(1px ,1px);
+}
+
+
+/* Used for join button on attempt challenge */
+.joinButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(128,0,128)
+}
+
+.joinButton .sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinButton .sign svg {
+  width: 20px;
+}
+
+.joinButton .sign svg path {
+  fill: white;
+}
+
+.joinButton .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+.joinButton:hover {
+  width: 145px; 
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.joinButton:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 5px;
+}
+
+.joinButton:hover .text {
+  opacity: 1;
+  width: 80%; 
+  transition-duration: .3s;
+  padding-right: -30px; 
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+.joinButton:active {
+  transform: translate(1px ,1px);
+}
+
+/* Used for create challenge and delete button in group dashboard */
+.createChallengeButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(128,0,128)
+}
+
+.createChallengeButton .sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createChallengeButton .sign svg {
+  width: 20px;
+}
+
+.createChallengeButton .sign svg path {
+  fill: white;
+}
+
+.createChallengeButton .text {
+  position: absolute;
+  right: -10%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+.createChallengeButton:hover {
+  width: 190px; 
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.createChallengeButton:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 1px;
+}
+
+.createChallengeButton:hover .text {
+  opacity: 1;
+  width: 100%; 
+  transition-duration: .3s;
+  padding-right: 3px;
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+.createChallengeButton:active {
+  transform: translate(1px, 1px);
+}
+
+/* Used for create group button in my groups */
+.createGroupButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(128,0,128);
+}
+
+.createGroupButton .sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createGroupButton .sign svg {
+  width: 20px;
+}
+
+.createGroupButton .sign svg path {
+  fill: white;
+}
+
+.createGroupButton .text {
+  position: absolute;
+  right: -10%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+.createGroupButton:hover {
+  width: 150px; 
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.createGroupButton:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: -2px;
+}
+
+.createGroupButton:hover .text {
+  opacity: 1;
+  width: 100%; 
+  transition-duration: .3s;
+  padding-right: 1px;
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+.createGroupButton:active {
+  transform: translate(1px, 1px);
+}
+
+/* Used for submission button on attempt challenge and create challenge */
+.submissionButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(128,0,128)
+}
+
+.submissionButton .sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submissionButton .sign svg {
+  width: 20px;
+}
+
+.submissionButton .sign svg path {
+  fill: white;
+}
+
+.submissionButton .text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+.submissionButton:hover {
+  width: 145px; 
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.submissionButton:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 0px;
+}
+
+.submissionButton:hover .text {
+  opacity: 1;
+  width: 80%; 
+  transition-duration: .3s;
+  padding-right: -30px; 
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+
+.submissionButton:active {
+  transform: translate(1px ,1px);
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 145px;
+  height: 45px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(128, 0, 128);
+}
+
+.actionButton .text {
+  position: absolute;
+  right: 0%;
+  width: 100%;
+  opacity: 1;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.actionButton:active {
+  transform: translate(1px ,1px);
+}
